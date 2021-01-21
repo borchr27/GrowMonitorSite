@@ -2,68 +2,117 @@
 <html lang="en">
 
 <head>
+    <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+<div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+</div>
+
 <body class="content">
-    <h1 class="heading">Home Argiculture Monitor & Controller</h1>
-    <main>
-        <div>Status: Operational</div>
-    </main>
-    <!-- <a href="wwww.validator.w3.org">W3 Validator</a> -->
-    <br>
-    <table>
-        <thead>
-            <tr>
-                <th>Parameter</th>
-                <th></th>
-                <th>Value</th>
-                <th></th>
-                <th>Record Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Temperature</td>
-                <td></td>
-                <td>56 Degrees</td>
-                <td></td>
-                <td>1/16/21 12:16:14</td>
-            </tr>
-            <tr>
-                <td>Humidity</td>
-                <td></td>
-                <td>86%</td>
-                <td></td>
-                <td>1/16/21 12:16:14</td>
-            </tr>
-            <tr>
-                <td>Light Dosage Today</td>
-                <td></td>
-                <td>6 Hours</td>
-                <td></td>
-                <td>1/16/21 12:16:14</td>
-            </tr>
-            <tr>
-                <td>Light Dosage Cumulative</td>
-                <td></td>
-                <td>258 Hours</td>
-                <td></td>
-                <td>1/16/21 12:16:14</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <div>
-        <h2>Webcam</h2>
-        <div>Last Updated: 1/16/21 12:14:35</div>
+    <div class="page">
+        <h1>Home Argiculture Monitor & Controller</h1>
+        <main>
+            <div>Status: Operational</div>
+        </main>
+        <!-- <a href="wwww.validator.w3.org">W3 Validator</a> -->
         <br>
-    </div>
-    <div id="plant">
-        <img src="vertifarm.jpg" title="">
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th></th>
+                    <th>Value</th>
+                    <th></th>
+                    <th>Record Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Temperature</td>
+                    <td></td>
+                    <td>56 Degrees</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td></td>
+                    <td>86%</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Light Dosage Today</td>
+                    <td></td>
+                    <td>6 Hours</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Light Dosage Cumulative</td>
+                    <td></td>
+                    <td>258 Hours</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <h3>Water</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <h3>Light</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <h3>Fan</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div>
+            <h2>Webcam</h2>
+            <div>Last Updated: 1/16/21 12:14:35</div>
+            <br>
+        </div>
+        <div id="plant">
+            <img src="vertifarm.jpg" title="">
+        </div>
     </div>
 </body>
 
@@ -73,40 +122,3 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-<style>
-    img {
-        opacity: 100%;
-        width: 40%;
-        height: auto;
-    }
-    #plant img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-    .content {
-        max-width: 70%;
-        margin: auto;
-    }
-    h2 {
-        color: #777;
-    }
-    body {
-        background-color: #ccc;
-    }
-    main {
-        background-color: #00cc00;
-        width: 100%;
-    }
-    td
-    {
-        padding: 0 10px;
-    }
-    th
-    {
-        padding: 0 10px;
-    }
-    
-</style>
