@@ -1,6 +1,7 @@
+@import "compass/css3";
 main {
     background-color: #00cc00;
-    width: 100%;
+    width: 20%;
 }
 
 .content {
@@ -42,6 +43,9 @@ th {
 }
 
 
+/* NAVBAR ------------------------------------------------------*/
+
+
 /* Add a black background color to the top navigation */
 
 .topnav {
@@ -76,6 +80,9 @@ th {
     background-color: #4CAF50;
     color: white;
 }
+
+
+/* SLIDER ---------------------------------------------*/
 
 
 /* The switch - the box around the slider */
@@ -146,4 +153,45 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+
+/* STATUS ---------------------------------------------*/
+
+body {
+    margin: 25px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.status.open:before {
+    background-color: #94E185;
+    border-color: #78D965;
+    box-shadow: 0px 0px 4px 1px #94E185;
+}
+
+.status.in-progress:before {
+    background-color: #FFC182;
+    border-color: #FFB161;
+    box-shadow: 0px 0px 4px 1px #FFC182;
+}
+
+.status.dead:before {
+    background-color: #C9404D;
+    border-color: #C42C3B;
+    box-shadow: 0px 0px 4px 1px #C9404D;
+}
+
+.status:before {
+    content: ' ';
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 7px;
 }
