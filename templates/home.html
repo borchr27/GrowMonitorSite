@@ -1,0 +1,131 @@
+{% extends "_layout.html" %} {% block title %}Home{% endblock %} {% block head %} {{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+</style>
+{% endblock %} {% block content %}
+
+<div class="page">
+    <div>
+        <h1>Home Argiculture Monitor & Controller</h1>
+    </div>
+
+    <div>
+        <h2>Status Monitor</h2>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li class="status open"></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Connected
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Controls</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                    </td>
+                    <td>
+                        <h3>Water</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                    </td>
+                    <td>
+                        <h3>Light</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                    </td>
+                    <td>
+                        <h3>Fan</h3>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <br>
+
+    <div>
+        <h2>Data</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th></th>
+                    <th>Value</th>
+                    <th></th>
+                    <th>Record Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Temperature</td>
+                    <td></td>
+                    <td>56 Degrees</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td></td>
+                    <td>86%</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Light Dosage Today</td>
+                    <td></td>
+                    <td>6 Hours</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+                <tr>
+                    <td>Light Dosage Cumulative</td>
+                    <td></td>
+                    <td>258 Hours</td>
+                    <td></td>
+                    <td>1/16/21 12:16:14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <br>
+
+    <div>
+        <h2>Webcam</h2>
+        <div>Last Updated: 1/16/21 12:14:35</div>
+        <br>
+    </div> <br>
+
+    <div id="plant">
+        <img src="static/vertifarm.jpg" title="">
+    </div>
+</div>
+
+{% endblock %}

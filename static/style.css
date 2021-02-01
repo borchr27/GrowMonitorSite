@@ -10,6 +10,7 @@ main {
 }
 
 .page {
+    padding-top: 100px;
     max-width: 70%;
     margin: auto;
 }
@@ -32,6 +33,7 @@ h2 {
 
 body {
     background-color: #ccc;
+    margin: 25px;
 }
 
 td {
@@ -51,6 +53,7 @@ th {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    margin-bottom: 0px;
 }
 
 
@@ -158,10 +161,6 @@ input:checked+.slider:before {
 
 /* STATUS ---------------------------------------------*/
 
-body {
-    margin: 25px;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -194,4 +193,17 @@ ul {
     margin-right: 10px;
     border: 1px solid #000;
     border-radius: 7px;
+}
+
+
+/* FIXED NAV ADN FOOTER ---------------------------------------------*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
