@@ -13,7 +13,7 @@
     {% endblock %}
 </head>
 
-{% set navigation_bar = [ (url_for('Home'), 'home', 'Home'), (url_for('Contact'), 'contact', 'Contacts'), (url_for('About'), 'about', 'About') ] -%}
+{% set navigation_bar = [ (url_for('Home'), 'home', 'Home'), (url_for('Contact'), 'contact', 'Contacts'), (url_for('About'), 'about', 'About') ] %}
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{url_for('Home')}}">
@@ -24,9 +24,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                {% for href, id, caption in navigation_bar %} {%if id == active_page %}
-                <a class="nav-link active" {% endif %} href="{{ href|e }}">{{ caption|e }}</a> {% endfor %} {% for href, id, caption in navigation_bar %} {%if id != active_page %}
-                <a class="nav-link" {% endif %} href="{{ href|e }}">{{ caption|e }}</a> {% endfor %}
+                {% for href, id, caption in navigation_bar %} {% if id == active_page %}
+                <a class="nav-link active" href="{{href}}">{{caption}}</a> {%endif%} {% if id != active_page %}
+                <a class="nav-link" href="{{href}}">{{caption}}</a>{%endif%} {% endfor %}
             </div>
         </div>
     </div>
