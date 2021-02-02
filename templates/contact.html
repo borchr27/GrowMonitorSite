@@ -1,4 +1,4 @@
-{% extends "_layout.html" %} {% block title %}Contact{% endblock %} {% block head %} {{ super() }}
+{% extends "_layout.html" %} {% set active_page = "contact" %} {% block title %}Contact{% endblock %} {% block head %} {{ super() }}
 <style type="text/css">
     .important {
         color: #336699;
@@ -6,8 +6,8 @@
 </style>
 {% endblock %} {% block content %}
 
-<body class="content">
+<div class="page">
     <h1>Contact Us!</h1><br>
     <h2>If you have any questions please reach out to us and we will do our best to help!</h2><br>
-</body>
+</div>
 {% endblock %}

@@ -1,21 +1,24 @@
-@import "compass/css3";
 main {
     background-color: #00cc00;
     width: 20%;
 }
 
-.content {
-    max-width: 100%;
-    margin: auto;
-}
-
 .page {
-    padding-top: 100px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    padding-left: 10px;
     max-width: 70%;
     margin: auto;
+    background-color: gainsboro;
 }
 
-img {
+.imagePlantLogo {
+    opacity: 100%;
+    width: 50%;
+    height: auto;
+}
+
+.imagePlantShelf {
     opacity: 100%;
     width: 40%;
     height: auto;
@@ -31,11 +34,6 @@ h2 {
     color: #777;
 }
 
-body {
-    background-color: #ccc;
-    margin: 25px;
-}
-
 td {
     padding: 0 10px;
 }
@@ -46,6 +44,11 @@ th {
 
 
 /* NAVBAR ------------------------------------------------------*/
+
+.navbar-brand {
+    width: 60px;
+    left: auto;
+}
 
 
 /* Add a black background color to the top navigation */
@@ -196,14 +199,14 @@ ul {
 }
 
 
-/* FIXED NAV ADN FOOTER ---------------------------------------------*/
+/* FOOTER ---------------------------------------------*/
 
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: darkgreen;
     color: white;
-    text-align: center;
+    text-align: left;
 }
