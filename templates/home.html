@@ -8,124 +8,129 @@
 
 <div class="page">
     <div>
-        <h1>Home Argiculture Monitor & Controller</h1>
-    </div>
+        <h2>Home Argiculture Monitor & Controller</h2>
+    </div><br>
 
-    <div>
-        <h2>Status Monitor</h2>
-        <table>
-            <tr>
-                <td>
-                    <ul>
-                        <li class="status open"></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li>
-                            Connected
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <div class="card">
+        <div class="card-header">
+            Status Monitor
+        </div>
+        <div class="card-body">
+            <span class="status open"></span>
+            <span>Connected</span>
 
-    <div>
-        <h2>Controls</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                    </td>
-                    <td>
-                        <h3>Water</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                    </td>
-                    <td>
-                        <h3>Light</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                    </td>
-                    <td>
-                        <h3>Fan</h3>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+        </div>
+    </div><br>
+
+    <div class="card">
+        <div class="card-header">
+            Controls
+        </div>
+        <div class="card-body">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                        </td>
+                        <td>
+                            <p>Water</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                        </td>
+                        <td>
+                            <p>Light</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                        </td>
+                        <td>
+                            <p>Fan</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div> <br>
 
-    <div>
-        <h2>Data</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Parameter</th>
-                    <th></th>
-                    <th>Value</th>
-                    <th></th>
-                    <th>Record Time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Temperature</td>
-                    <td></td>
-                    <td>56 Degrees</td>
-                    <td></td>
-                    <td>1/16/21 12:16:14</td>
-                </tr>
-                <tr>
-                    <td>Humidity</td>
-                    <td></td>
-                    <td>86%</td>
-                    <td></td>
-                    <td>1/16/21 12:16:14</td>
-                </tr>
-                <tr>
-                    <td>Light Dosage Today</td>
-                    <td></td>
-                    <td>6 Hours</td>
-                    <td></td>
-                    <td>1/16/21 12:16:14</td>
-                </tr>
-                <tr>
-                    <td>Light Dosage Cumulative</td>
-                    <td></td>
-                    <td>258 Hours</td>
-                    <td></td>
-                    <td>1/16/21 12:16:14</td>
-                </tr>
-            </tbody>
-        </table>
-    </div> <br>
+    <div class="card">
+        <div class="card-header">
+            Data
+        </div>
+        <div class="card-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th></th>
+                        <th>Value</th>
+                        <th></th>
+                        <th>Record Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Temperature</td>
+                        <td></td>
+                        <td>56 Degrees</td>
+                        <td></td>
+                        <td>1/16/21 12:16:14</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td></td>
+                        <td>86%</td>
+                        <td></td>
+                        <td>1/16/21 12:16:14</td>
+                    </tr>
+                    <tr>
+                        <td>Light Dosage Today</td>
+                        <td></td>
+                        <td>6 Hours</td>
+                        <td></td>
+                        <td>1/16/21 12:16:14</td>
+                    </tr>
+                    <tr>
+                        <td>Light Dosage Cumulative</td>
+                        <td></td>
+                        <td>258 Hours</td>
+                        <td></td>
+                        <td>1/16/21 12:16:14</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div><br>
 
-    <div>
-        <h2>Webcam</h2>
-        <div>Last Updated: 1/16/21 12:14:35</div>
+    <div class="card">
+        <div class="card-header">
+            Webcam
+        </div>
+        <div class="card-body">
+            <p>Last Updated: 1/16/21 12:14:35</p>
+        </div>
+        <div id="plant">
+            <img src="static/vertifarm.jpg" class="imagePlantShelf" title="">
+        </div>
         <br>
-    </div> <br>
+    </div><br>
 
-    <div id="plant">
-        <img src="static/vertifarm.jpg" class="imagePlantShelf" title="">
-    </div>
+
 </div>
 
 {% endblock %}
